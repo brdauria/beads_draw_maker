@@ -1,0 +1,14 @@
+{
+  "pins_space_cm":  0.4842,
+  "pins_x": 15,
+  "pins_y": 20,
+  "show_dots": true,
+  "colors": {
+    "x": null,
+    "w": ["k","w"],
+    "v": ["blueviolet","blueviolet"]
+  },
+  "DPI": 300,
+  "base_dir": "~/Desktop/",
+  "file_name": "image.pdf"
+}
