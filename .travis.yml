@@ -12,3 +12,4 @@ before_script:
 # command to run tests
 script:
   - python beads_draw_maker.py ./test/flower.txt
+  - ls *.pdf
