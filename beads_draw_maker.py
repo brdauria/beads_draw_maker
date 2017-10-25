@@ -106,4 +106,6 @@ if __name__ == "__main__":
 
     file_name = config['file_name']
     plt.savefig(base_dir + file_name, dpi=config['DPI'])
-    plt.show()
+
+    if config['show_on_screen']:
+        plt.show()

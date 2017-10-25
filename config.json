@@ -3,12 +3,13 @@
   "pins_x": 15,
   "pins_y": 20,
   "show_dots": true,
+  "show_on_screen": false,
   "colors": {
     "x": null,
     "w": ["k","w"],
     "v": ["blueviolet","blueviolet"]
   },
   "DPI": 300,
-  "base_dir": "~/Desktop/",
+  "base_dir": "./",
   "file_name": "image.pdf"
 }
