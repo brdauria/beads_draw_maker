@@ -91,6 +91,7 @@ def config_display():
 
 if __name__ == "__main__":
     config_display()
+    matplotlib.use('Agg')
     read_config()
 
     if len(sys.argv) > 1:
