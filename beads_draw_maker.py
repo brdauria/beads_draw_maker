@@ -89,6 +89,7 @@ def config_display():
         mpl.use('Agg')
 
 if __name__ == "__main__":
+    config_display()
     read_config()
 
     if len(sys.argv) > 1:
