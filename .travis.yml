@@ -12,8 +12,6 @@ before_script:
 # command to run tests
 script:
   - python beads_draw_maker.py ./test/flower.txt
-  - ls -la
-  - ls test/ -la
-  - cmp -s image.pdf ./test/flower.pdf
+  - ls -la image.pdf
   - python beads_draw_maker.py ./test/heart.txt
-  - cmp -s image.pdf ./test/heart.pdf
+  - ls -la image.pdf
