@@ -1,10 +1,8 @@
-import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib import patches
 from basic_units import BasicUnit
 from basic_units import cm, inch
 import json, sys
-import os
 from os.path import expanduser
 debug_on = False
 
@@ -83,15 +81,7 @@ def read_image(fname):
         content = f.readlines()
     return [x.strip() for x in content] # remove `\n` at the end of each line
 
-def config_display():
-    print('display=', os.environ.get('DISPLAY', ''))
-    if os.environ.get('DISPLAY', '') == '':
-        print('no display found. Using non-interactive Agg backend')
-        matplotlib.use('Agg')
-
 if __name__ == "__main__":
-    config_display()
-    matplotlib.use('Agg')
     read_config()
 
     if len(sys.argv) > 1:
