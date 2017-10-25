@@ -13,6 +13,7 @@ before_script:
 script:
   - python beads_draw_maker.py ./test/flower.txt
   - ls -la
+  - ls test/ -la
   - cmp -s image.pdf ./test/flower.pdf
   - python beads_draw_maker.py ./test/heart.txt
   - cmp -s image.pdf ./test/heart.pdf
