@@ -84,6 +84,7 @@ def read_image(fname):
     return [x.strip() for x in content] # remove `\n` at the end of each line
 
 def config_display():
+    print('display=', os.environ.get('DISPLAY', ''))
     if os.environ.get('DISPLAY', '') == '':
         print('no display found. Using non-interactive Agg backend')
         matplotlib.use('Agg')
