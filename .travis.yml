@@ -4,6 +4,9 @@ python:
 # command to install dependencies
 install:
   - pip install -r requirements.txt
+# add environment variables
+before_script:
+  - "export DISPLAY=:99.0"
 # command to run tests
 script:
   - python beads_draw_maker.py ./test/flower.txt
